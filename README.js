@@ -14,17 +14,21 @@ class Vehicle{
     } 
 
     getDetails() {
-        return `${this.type} from ${this.make} with Model Number ${this.model}, Manufactured in the year ${this.year} has a mileage of ${this.mileage}/km.`
+        return `${this.type}:
+         maker: ${this.make} 
+         Model: ${this.model}
+         Manufactured year: ${this.year} 
+         mileage: ${this.mileage}/km.`
     }
 }
- const car = new Vehicle("car", "Honda", 123, 2026);
- const truck = new Vehicle("truck", "GMC", 3456, 2025); 
- const motorcycle = new Vehicle("motorcycle", "Harley", 4567, 2026); 
+ let car = new Vehicle("car", "Honda", "civic", 2026);
+ let truck = new Vehicle("truck", "GMC", "CrossOvers", 2025); 
+ let motorcycle = new Vehicle("motorcycle", "Harley", "X-440", 2026); 
 
 
-      car.drive(78);
-      truck.drive(89);
-      motorcycle.drive(56);
+ car.drive(78);
+ truck.drive(89);
+ motorcycle.drive(56);
 
  console.log(car.getDetails());
  console.log(truck.getDetails());
